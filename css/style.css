@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #0a0a0a;
+    background: #0d002c;
     color: #fff;
     font-family: "Inter", serif;
     font-weight: 400;
@@ -12,7 +12,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.9);
     display: flex;
     justify-content: space-between;
 
@@ -54,6 +53,7 @@ body {
     text-align: center;
     background: url('../img/background.png') center/cover;
     overflow: hidden;
+    border-bottom: solid black;
 }
 .hero h1 {
     font-size: 48px;
@@ -65,7 +65,7 @@ body {
 
 .hero h1 span {
     font-family: "Chewy", serif;
-}
+}   
 .hero p {
     font-size: 20px;
     max-width: 600px;
@@ -75,8 +75,15 @@ body {
     z-index: 2;
     text-shadow: 0 0 15px black;
 }
-.hero img{
+.hero figure img{
     filter: drop-shadow(0px 0px 15px rgb(253, 255, 230));
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hero:hover figure img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.05);
 }
 
 .fog-container {
@@ -100,7 +107,10 @@ body {
 }
 @keyframes fogAnimation {
     0% { transform: scale(1) translateX(0); }
-    50% { transform: scale(1.1) translateX(5%); }
+    50% { transform: scale(3) translateX(5%); }
     100% { transform: scale(1) translateX(0); }
 }
 
+section h2{
+    text-align: center;
+}
