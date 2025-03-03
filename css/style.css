@@ -164,3 +164,24 @@ section h2{
 .discordTeam img {
     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
 }
+
+/* Code PeNAL */
+.codepenal {
+    height: 125vh;
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+    background: url('../img/lake.png') center/cover;
+    overflow: hidden;
+    border-bottom: solid #080808;
+}
+.tab{
+    width:75%;
+    margin: auto;
+}
+
+.capitole img{
+    margin: auto;
+    height: 250px;
+    margin-bottom: 20px;
+}
