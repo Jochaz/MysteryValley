@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystery Valley</title>
+    <title>Mystery Valley : Règlement</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Sigmar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sigmar&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -20,22 +21,365 @@
             <a href="/codepenal.html">Code pénal</a>
 
             <a href="#">Nous soutenir</a>
-            <a href="https://discord.gg/BehxEZDB" target="_blank"><img src="./img/Discord_Logo_sans_texte.svg.png" height="25"/></a>
+            <a href="https://discord.gg/BehxEZDB" id="discordServer" target="_blank"><img src="./img/Discord_Logo_sans_texte.svg.png" height="30" width="30"/></a>
         </div>
     </div>
-    <section class="hero">
-        <h1>Bienvenue à <span>Mystery Valley</span></h1>
-        <p>Un monde où chaque décision compte. Êtes-vous prêt à entrer dans l'ombre ?</p>
-    
-        <div class="fog-container">
-            <div class="fog"></div>
+
+    <section class="reglement">
+        <div class="tab">
+            <h2>Règlement</h2>
+            <div class="background-intro">
+                <cite>
+                    <p>Le règlement du serveur est à connaître sans fautes, en cas de non respect
+                        vous êtes exposé à une sanction. Selon la faute commise, la sanction va d’un
+                        avertissement oral jusqu’à un ban définitif.
+                        Ce règlement s’applique à toutes les personnes qui souhaitent rejoindre le
+                        serveur. Les joueurs qui jouent sur Mystery Valley s'engagent à respecter le
+                        règlement ci présent ainsi qu'à s'informer des Mise à jour de celui-ci. <br /><br />
+                        Le Tchat écrit IG, est utilisable qu’en cas de problème (/report) ou pour des
+                        interactions IG (/me).
+                        Toutes Insultes, Spam, Propos Raciste, Homophobe où bien à caractère
+                        Pornographique seront sanctionnés par un Warn, voir un Ban.
+                        Les publicités pour d'autres "Serveur RP", sont interdites et seront sanctionnées
+                        par un Ban Permanent.
+                        En cas de soucis, un salon "Ticket" sera mis à disposition sur discord pour toute
+                        demande spécifique (Création Entreprise, Question, Dossier etc…)
+                        Le Channel vocal hrp n’est pas un endroit pour régler vos problèmes aux grand
+                        public.
+                        </p>
+                </cite>
+            </div>
+
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="lexique-tab" data-tabs-target="#lexique" type="button" role="tab" aria-controls="lexique" aria-selected="false">Lexique</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="termes-tab" data-tabs-target="#termes" type="button" role="tab" aria-controls="termes" aria-selected="false">TERMES RP pour expliquer les choses IRL</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="HRP-tab" data-tabs-target="#HRP" type="button" role="tab" aria-controls="HRP" aria-selected="false">HRP</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="RP-tab" data-tabs-target="#RP" type="button" role="tab" aria-controls="RP" aria-selected="false">RP</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="illegale-tab" data-tabs-target="#illegale" type="button" role="tab" aria-controls="illegale" aria-selected="false">Illégale</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="entreprise-tab" data-tabs-target="#entreprise" type="button" role="tab" aria-controls="entreprise" aria-selected="false">Entreprise</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="lspd-tab" data-tabs-target="#lspd" type="button" role="tab" aria-controls="lspd" aria-selected="false">LSPD</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg text-white hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="ems-tab" data-tabs-target="#ems" type="button" role="tab" aria-controls="ems" aria-selected="false">EMS</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="default-tab-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="lexique" role="tabpanel" aria-labelledby="lexique-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Powergaming :</strong> Effectuer ingame des actions irréalisables dans la vie.
+                        <u>Exemple</u> : Rouler en Ferrari dans la montagne. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">FairPlay :</strong> Avoir une attitude propre en respectant rigoureusement les
+                        règles et le bon sens. N'oubliez surtout pas que gta est un jeu pour
+                        s’évader, donc prenez autant de plaisir que vous pouvez en donner.
+                        Obligatoire.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Metagaming ou Mixe :</strong>Utiliser des informations HRP dans un contexte
+                        RP. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">No Fear RP :</strong> Est le fait de ne pas jouer la peur, ou les appréhensions de
+                        son personnage. Interdit. Si vous ne jouez pas votre fear Police ou
+                        voyous, vous serez sanctionnés par un staff ou prendrez une mort RP.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">No Pain RP :</strong> Correspond à la simulation de la douleur et des émotions
+                        de votre personnage quand vous êtes blessé. On pourrait l’associer avec
+                        le No Fear-RP. Interdit</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Freekill :</strong> Mettre coma une personne sans raison. Il faut avoir une
+                        raison solide pour tuer une personne. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Carkill :</strong> Utiliser un véhicule dans le but d’écraser ou tuer quelqu’un
+                        sans raison. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Spawn Kill :</strong> Tuer une personne lorsqu’elle apparaît en ville. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Rush :</strong> Courir vers une ou plusieurs personnes lors d’une fusillade.
+                        Interdit.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Force RP :</strong> Forcer un joueur à effectuer une action sur une scène en
+                        repoussant les limites ou le bon sens. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Streamhack :</strong>Utiliser des informations RP obtenues sur un stream.
+                        Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Mass RP :</strong> Adapter son RP en prenant compte qu’autour de vous des
+                        gens peuvent vous voir même si vous ne les voyez pas.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Win RP :</strong> Vouloir gagner absolument sans respecter les règles. Interdit.
+                    </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Snake Run :</strong>Effectuer des courses en zigzag rapide pour éviter les
+                        balles. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Revenge Kill :</strong> Revenir sur scène pour se venger de votre comas.
+                        Interdit.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Bunny Hop :</strong> Courir et sauter en même temps pour aller plus vite ou
+                        éviter des balles. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Cohérence RP :</strong>  Respecter le background de son personnage ainsi que
+                        son évolution.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Freeloot :</strong> Dépouiller une personne ou prendre son identité sans aucune
+                        raison. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Drive by  :</strong> Tirer d’un véhicule roulant ou bateau. Interdit.
+                    </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Speed Punch :</strong> Courir en tapant un joueur ou le taper rapidement sans
+                        qu’il puisse se défendre. Interdit.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Cop Bait :</strong> Provoquer la police pour faire des courses poursuites juste
+                        pour le plaisir. Interdit.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Glitch, Usebug ou Cheat :</strong> Tricher ou se servir d’une défaillance du jeu
+                        pour en profiter. Interdit.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="termes" role="tabpanel" aria-labelledby="termes-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">J’ai mis mes lentilles : </strong>Être en live ou stream.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Tempête : </strong>Reboot serveur.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Maux de tête : </strong>Crash.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Mal aux yeux : </strong>Desync ou Lag.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Parler au Fédéraux : </strong>Parler aux Admins.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Avoir la peau pâle : </strong>Être invisible.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Avoir des fourmis dans les jambes : </strong>Passer à travers la MAP.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Marcher dans la merde ou faire ses lacets : </strong>Se téléporter.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Trouver une excuse comme : aller pisser, donner un coup de fil… : </strong>S’absenter ou être AFK quelques minutes.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Intranet : </strong>Discord.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Concitoyen : </strong>PNJ</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Citoyen : </strong>Joueur</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="HRP" role="tabpanel" aria-labelledby="HRP-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Les Prénom et Nom RP doivent obligatoirement être mis sur Steam ou fiveM
+                        ainsi que Discord pour une recherche plus facile. Vous vous exposez à un
+                        kick, warn voir ban si ils ne sont pas mis.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Il est interdit d’utiliser tout logiciel externe de triche.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Tout propos raciste et discriminatoire est strictement interdit. Les clichés
+                        racistes sont également interdits.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Le respect des religions et des origines est primordial, les blasphèmes ne
+                        sont pas tolérés.                        
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● L'homophobie/transphobie/sexisme est strictement interdite.
+
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Déféquer/Pisser/mutilation excessive sur quelqu'un est strictement interdit.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Toutes scènes incluant des actes d'agressions sexuelles ou de viols sont
+                        strictement interdites et sanctionnées d’un ban permanent.</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● La base militaire est une zone interdite.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● ● Les petites insultes sont tolérées mais n’en abusez pas ! Le respect est
+                        primordial !                        
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● N’oubliez pas que derrière chaque personnage se cache un joueur. Les tirs
+                        abusifs ne sont pas autorisés sur le serveur, privilégiez les scènes et les
+                        combats à mains nues.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Toutes scènes HRP vocal In Game seront sanctionnées.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● La couleur ou le style vestimentaire ne doit pas mener à la conclusion que
+                        certaines personnes font partie d’un gang ou d’une organisation. Vous
+                        pouvez très bien adorer le bleu et vous promenez en bleu sans pour autant être
+                        membre des Aztecas ou Marabunta.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">●  Les groupes ociels sur le serveur possèdent chacun un quartier. Prenez en
+                        compte le Mass RP. Même s' il n’y a aucuns joueurs de ce groupe connectés,
+                        il y a des centaines de personnes qui y habitent et qui n'hésitent pas à vous
+                        tirer dessus.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Entrer dans un quartier sans respect du Mass RP et des avertissements des
+                        membres vous expose à la Mort RP, à vos risques et périls.                        
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Chaque groupe illégal, ne peuvent posséder ou gérer qu’une seule entreprise.
+                        Les gangs quant à eux ne peuvent pas en avoir.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Il est interdit de donner tous ses biens juste avant sa mort RP.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Il est interdit de rejoindre la même organisation criminelle après votre mort
+                        RP. (au moins 1 semaine d’intervalle).
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Finissez absolument votre scène, même si celle ci est HRP, et créer un ticket
+                        pour la régler en BDA par la suite.
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● N’oubliez pas que Los Angeles est une grande ville, des caméras sont dans
+                        certains lieux d'intérêt. Exemple : hôpital, commissariat, gouvernement…                        
+                        </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Pour avoir un mapping sur le serveur, il faut attendre minimum 1 à 2
+                        semaines actives ( Il faudra ensuite transmettre un dossier au sta )
+                        </p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="RP" role="tabpanel" aria-labelledby="RP-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Les zones safe sont : </strong> Le poste de police, l'hôpital et l'aéroport</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">Dans ces lieux, il est interdit de faire ces actions : 
+                        <br />- Kidnapping
+                        <br />- Braquer une personne
+                        <br />- Déclencher des bagarres ou frapper une personne
+                        <br />- Voler un véhicule
+                        <br />- Rester volontairement plus de 10 minutes sur place pour s’y réfugier et refuser
+                        des scènes
+                        <br />- Si vous êtes pris en chasse, il vous est interdit de vous diriger vers une zone safe
+                        pour vous y réfugier                        
+                    </p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Les zones interdites sont : </strong> La base militaire et le porte avion</p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Lors d’un coma dû à un oubli de nourriture / déshydratation, vous vous
+                        souvenez de tout. <br />
+                        ● Lors d’un coma dû à coup de crosse, coup derrière la tête, coup de couteau, etc… Vous oubliez les quinze dernières minutes.<br />
+                        ● Lors d’un coma dû à une arme à feu, vous oubliez la totalité de la scène.<br />
+                        ● Le Fear RP et le Mass RP sont à prendre en compte en tout temps, tout manquement à ces règles sera lourdement sanctionné. (Je ne veux pas voir un joueur pointé par 10 gars et que celui-ci réponde je n’ai peur de rien etc…) <br />
+                        ● Il est interdit de fouiller et dépouiller un membre des EMS, de la LSPD, etc… en service.
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="illegale" role="tabpanel" aria-labelledby="illegale-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Illégale</strong></p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><u>Privilégiez le dialogue au lieu des fusillades.</u> <br/> <br />
+                        ● Toute personne devra respecter un maximum les forces de l’ordre !!! Il est
+                        important de s'arrêter si vous n’avez rien à vous reprocher.<br />
+                        ● Il est strictement interdit de troll/forceRP les policiers. Merci de respecter le
+                        fear police.<br />
+                        ● il est interdit de prendre les armes du LSPD même si ils sont Hors service
+                        ● Vous ne devez pas prendre plus de 50% de l’inventaire que la personne a sur
+                        lui !<br />
+                        ● Vendre de la drogue à moto est strictement interdit. De plus, la vente de
+                        drogues est interdite en étant dans ou sur un véhicule. La vente en véhicule
+                        boutique est interdite !<br />
+                        ● Vous ne pouvez pas reconnaître une personne masquée à sa voix à moins
+                        qu’elle prenne d’elle-même la décision de vous révéler son identité.<br />
+                        ● Il est interdit de loot un joueur qui est en coma !<br />
+                        ● Tous Membres de Gang ou Orga devront passer par un wipe pour rejoindre
+                        les services publiques.<br />
+                        ● Les alliances entre GANG-GANG / ORGA-ORGA sont strictement interdites !
+                        (alliance commerciale autorisée).<br />
+                        ● Il est strictement interdit de faire des appels à des entreprises dans le but de
+                        les braquer et de les dépouiller de leurs armements et/ou argent. Exemple :
+                        Les taxis , EMS ….<br />
+                        ● Une hiérarchie doit être établie au sein d’un groupe avec au moins un leader.<br />
+                        ● Un médecin est tenu au serment d’Hippocrate, il est donc interdit de le
+                        kidnapper et de le mettre dans le coma pour le forcer à vous soigner.<br />
+                        ● Tout braquage est interdit lors d'un événement organisé. (sauf dossiers
+                        validés)<br />
+                        ● En cas de prise d’otages, la rançon maximum est de :<br />
+                        5000$ Max par otage civil.<br />
+                        20000$ Max pour une personne de l'État.<br /><br />
+                        ● Si vous arrivez à semer la police pendant une course poursuite, n'oubliez pas
+                        qu'ils ont tout de même le descriptif de votre voiture.<br />
+                        ● Réfléchissez avant d’utiliser une arme, vous êtes exposés à de lourdes
+                        sanctions en RP si vous tirez sur une personne ou autres.<br />
+                        ● Lors d’une scène, le No Fear RP / No Pain RP vous exposent à la mort RP si
+                        vos interlocuteurs décident de vous tuer. (En plus d’être sanctionné d’un
+                        avertissement.)<br />
+                        ● Vous ne pouvez pas braquer la même personne plusieurs fois par jour.<br />
+                        ● Il est interdit de forcer un citoyen à sortir de l’argent de son core ou de son
+                        compte bancaire pour le prendre.<br />
+                        ● Les rackets “minute” sont formellement interdits. N’oubliez jamais que
+                        vous devez jouer avec le joueur en face de vous et qu’il doit comprendre
+                        l’intérêt de la scène et donner matière au RP !<br />
+                        ● Les braquages à moto sont strictement interdit (WINRP)<br />
+                        ● Quand vous braquez une bijouterie, supérette etc… vous devez attendre la
+                        police obligatoirement !<br /><br />
+                        Braquages de supérette 1 otage pour une supérette.<br />
+                        Braquages de bijouterie 2 otages pour une bijouterie.<br />
+                        Braquages de Fleeca 3 otages pour une Fleeca.<br />
+                        Braquage de la banque centrale 4 otages pour la banque centrale.<br /><br />
+                        ● Lorsque vous braquez une personne dans la rue, ne restez pas sur place,
+                        emmenez la personne dans un coin isolé à l’abri des regards.<br />
+                        ● Après un gunfight, il vous est interdit de ramasser un mort, attendre sa
+                        réanimation puis l’interroger. Après le Gunfight vous devez fuir. Il est trop
+                        tard pour interroger et/ou dépouillez un mort, il fallait privilégier le
+                        dialogue.<br />
+                        ● Il est interdit de faire enlèvement sur enlèvement dans le but d’avoir des
+                        informations sous prétexte que cette personne est d’un gang. On engage
+                        d’abord la conversation !<br />
+                        ● L’île possède plus de 4 millions d’habitants, prenez en compte le Mass RP.<br />
+                        ● Vous pouvez revendiquer un otage à partir du moment où l’otage est un
+                        JOUEUR. La vie d’un otage est importante, vous ne pouvez pas le tuer sans
+                        raison valable<br />
+                        </p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="entreprise" role="tabpanel" aria-labelledby="entreprise-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">Entreprise</strong></p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Un seul patron par entreprise. Une scène de recrutement avec le responsable
+                        est obligatoire avant d’être considéré comme employé. <br/>
+                        ● Le patron est tenu d’être actif, si ce n'est pas le cas le sta est en droit de
+                        nommer quelqu'un qui proposera une reprise d'activité.<br/>
+                        ● Il est possible de passer des contrats entre diérentes entreprise</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="lspd" role="tabpanel" aria-labelledby="lspd-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">LSPD</strong></p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Il est obligé de déposer ses armes (non autorisées) à la fin de son service. <br />
+                        ● La hiérarchie doit être respectée.<br />
+                        ● Les citoyens doivent craindre la LSPD mais vous ne devez pas abuser de vos
+                        fonctions pour les insulter sans raison, vous devez garder votre sang-froid
+                        ainsi que votre professionnalisme, le respect est primordial.<br />
+                        ● Vous ne devez pas ouvrir le feu en premier et toujours effectuer des
+                        sommations avant.<br />
+                        ● Les forces de police ne peuvent pas chercher les points de drogue ni même
+                        les camper une fois découvert.<br />
+                        ● Vous ne pouvez pas taser une personne dans un véhicule ni vous servir d’un
+                        taser pour crever des pneus.<br />
+                        ● Interdiction de faire une descente sans mandat attribué par le procureur ou
+                        le juge.<br />
+                        ● Utilisez la parole avant tout, négociez avec les preneurs d'otage.<br />
+                        ● Vous ne pouvez pas avoir de soupçons sur l’argent sale avant vérification à la
+                        machine.<br />
+                        ● Vous devez respecter les revendications des braqueurs pour le Fair-Play des
+                        scènes.<br />
+                        ● Vous devez être capable RP et HRP de justifier la provenance de vos
+                        informations.<br />
+                        ● Le ripou n’est pas autorisé.<br />
+                        ● Concernant les indics, vous devez vous référer uniquement au capitaine et
+                        attendre un minimum de temps afin qu’il puisse juger de la teneur des
+                        informations données.<br />
+                        ● Un joueur qui décide d’être indic est soumis à une mort RP active en
+                        permanence, vous devez donc faire en sorte de le protéger et garder son
+                        identité secrète.<br />
+                        ● Seul le capitaine/lieutenant doit être tenu au courant des noms des indics
+                        pour leur sécurité.<br />
+                        ● Pour chaque arrestation, garde à vue, plaintes etc. vous êtes tenu de garder
+                        une trace écrite :<br />
+                        -nom de l’ocier en charge<br />
+                        -identité du détenu ou du plaintif<br />
+                        -nature de l’arrestation<br />
+                        -date et heure + faits reprochés<br /><br />
+                        ● Un vice de procédure n' annule pas la procédure mais allège la peine (voir un
+                        avocat)<br />
+                        ● À partir du moment où vous décidez de mettre en état d’arrestation un
+                        citoyen, vous devez lui lire les droits Miranda et insister sur le fait qu’il ait
+                        bien compris ces derniers. Évitez de laisser trop longtemps en cellule les
+                        citoyens. ( 30 minutes max).<br />
+                        ● Il est interdit de fouiller un citoyen sur un simple contrôle de routine (hors
+                        defcon annoncé).<br />
+                        ● Lorsque vous êtes amenés à fouiller un individu vous ne devez pas tenir
+                        compte de l’argent marqué dit argent “sale” vous devez prendre en compte
+                        que la personne détient cet argent.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="ems" role="tabpanel" aria-labelledby="ems-tab">
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400"><strong class="font-medium text-gray-800 dark:text-white">EMS</strong></p>
+                    <p class="text-left text-sm text-gray-500 dark:text-gray-400">● Vous devez respecter les arrêts de travail ordonnés par les médecins après
+                    vous être fait soigner.<br />
+                    ● Lors d’une intervention EMS, essayez de les aider au maximum en précisant
+                    le type des blessures.<br />
+                    ● Jouez vos scènes au maximum, si l’EMS pense qu’il y a nécessité de vous
+                    soigner à l’hôpital pour des soins supplémentaires ou autres, vous devez le
+                    suivre.<br />
+                    ● Soyez imaginatifs et profitez un maximum de ce que vous avez à disposition
+                    dans l'hôpital. Un médecin est tenu au serment d’Hippocrate et doit soigner
+                    toutes personnes.<br />
+                    ● Lorsque vous êtes EMS vous devez respecter un minimum de temps pour
+                    soigner une victime. Dressez un bilan et déterminez la nature de la blessure
+                    avant d’eectuer une quelconque opération sauf extrême urgence de
+                    réanimation par exemple, contrôle du pouls puis réanimation.<br />
+                    ● Ne faites pas d'appel E.M.S si vos corps se font emmener ailleurs pour éviter
+                    qu'il n'y ai personne a l'arrivée des E.M.S soyez sûr de rester à cet endroit
+                    avant de lancer l'appel.<br />
+                    ● Ne pas faire d'appels E.M.S tant qu'un gunfight n'est pas terminé ou que la
+                    scène soit finie complètement avant de faire l'appel.</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="socialnetwork">
+        
+        
+        
 
     </section>
-    <section class="team">
-        <h2>L'équipe de MYSTERY VALLEY</h2>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>

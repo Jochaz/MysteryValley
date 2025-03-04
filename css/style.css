@@ -167,8 +167,10 @@ section h2{
 
 /* Code PeNAL */
 .codepenal {
-    height: 125vh;
+    height: 100%;
+    min-height: 100vh;
     padding-top: 100px;
+    padding-bottom : 20px;
     justify-content: center;
     text-align: center;
     background: url('../img/lake.png') center/cover;
@@ -184,4 +186,29 @@ section h2{
     margin: auto;
     height: 250px;
     margin-bottom: 20px;
+}
+
+
+.tab h2{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.reglement {
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom : 20px;
+    justify-content: center;
+    text-align: center;
+    background: url('../img/valley.png') center/cover;
+    overflow: hidden;
+    border-bottom: solid #080808;
+}
+
+.background-intro {
+    background-color: rgba(30,30,30, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+
 }
