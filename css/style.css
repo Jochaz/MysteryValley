@@ -212,3 +212,39 @@ section h2{
     text-align: justify;
 
 }
+
+.container-join{
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom : 20px;
+    background: url('/img/wallpaper-yellow.jpg') center/cover;
+    overflow: hidden;
+    border-bottom: solid #080808;
+}
+
+.introduction-join h2{
+    text-align: center;
+    font-family: "Nunito Sans", serif;
+    font-style: normal;
+    font-size: xx-large;
+    padding-bottom: 20px;
+}
+
+.introduction {
+    width: 75%;
+    margin: auto;
+    background-color: rgba(30,30,30, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.content-join{
+    background-color: rgba(30,30,30, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    width: 75%;
+    margin: auto;
+}
