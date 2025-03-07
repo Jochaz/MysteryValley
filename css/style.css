@@ -18,6 +18,9 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     z-index: 1000;
+
+    background: rgba(0, 0, 0, 0); /* Fond transparent */
+    transition: background 0.3s ease-in-out;
 }
 .logo {
     font-family: "Chewy", serif;
@@ -33,6 +36,11 @@ body {
     gap: 20px;
     margin-right: 20px;
 }
+
+.scrolled {
+    background: rgba(28, 28, 28, 0.8); /* Fond noir semi-transparent */
+}
+
 .menu a {
     margin-top:10px;
     color: #fff;
@@ -265,4 +273,12 @@ section h2{
 .twitchTeam a:hover {
     color: #080808;
     text-shadow: 0 0 15px #A020F0;
+}
+
+.content-join a{
+    text-decoration: none;
+}
+
+.content-join a:hover{
+    text-shadow: 0 0 15px #f5e6ff;
 }
