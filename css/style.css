@@ -334,4 +334,35 @@ section h2{
     .hamburger {
         display: flex;
     }
+
+    .support-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+.support-button {
+    background: linear-gradient(45deg, #A020F0, #6A0DAD);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(160, 32, 240, 0.8);
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.support-button:hover {
+    background: linear-gradient(45deg, #6A0DAD, #A020F0);
+    box-shadow: 0 0 20px rgba(160, 32, 240, 1);
+    transform: scale(1.05);
+}
+
+.header a:hover{
+    text-decoration: none;
+    color: #fff;
 }
