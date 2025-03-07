@@ -248,3 +248,21 @@ section h2{
     width: 75%;
     margin: auto;
 }
+
+.h5-card{
+    color: #080808;
+}
+
+.pubTeam{
+    color:#080808;
+}
+
+.twitchTeam a {
+    color:#080808;
+    text-decoration: none;
+}
+
+.twitchTeam a:hover {
+    color: #080808;
+    text-shadow: 0 0 15px #A020F0;
+}
