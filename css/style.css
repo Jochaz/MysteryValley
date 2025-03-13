@@ -336,8 +336,9 @@ section h2{
     }
 
     .support-button {
-        font-size: 14px;
-        padding: 6px 12px;
+        width: auto;
+        margin-right: 20px;
+        width: 200px;
     }
 }
 
@@ -373,6 +374,7 @@ section h2{
     flex-wrap: wrap;
   }
 
+
 @keyframes appear {
     from {
       opacity: 0;
@@ -389,3 +391,45 @@ section h2{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
+.infos{
+    height: 100%;
+    min-height: 25vh;
+    padding-top: 75px;
+    padding-bottom : 75px;
+    background: url('/img/gta-5-2560x1440-nighttime-purple-sky-kjob2rsay5ix9pm2.jpg') center/cover;
+    overflow: hidden;
+    border-bottom: solid #080808;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.background-infos {
+    background-color: rgba(30,30,30, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    width:75%;
+    text-align: justify;
+    margin: 0 auto;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+.background-infos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
